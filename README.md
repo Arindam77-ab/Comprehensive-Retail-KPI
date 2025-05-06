@@ -1,28 +1,63 @@
-# Comprehensive-Retail-KPI
-This project involved the creation of a fully interactive Power BI dashboard designed to analyze and visualize key retail performance metrics using a dataset of over 178,000 transactions. The goal was to uncover actionable insights for stakeholders across sales, profit, quantity, and product performance dimensions.
+ Project Title: Superstore Sales Performance Dashboard
+Tool Used: Power BI
+Data Source: Excel file containing transactional sales data (over 12K rows)
 
- Key Insights:
-Technology emerged as the top-performing category, contributing 35.29% of total profit and 32.52% of total sales, guiding category-level investment strategies.
+Objective:
+To build an interactive and insightful Power BI dashboard for analyzing sales, profit, quantity, and product distribution across various dimensions such as Region, Category, Market, and Time for a global superstore.
 
-The Consumer segment led in both revenue and profitability, driving 63% of total sales and over 70% of total profit, highlighting customer lifetime value opportunities.
+Key Steps & Workflow:
+1. Data Preparation & Cleaning
+   
+Imported raw sales data from Excel.
+Checked for and handled missing or inconsistent values.
+Converted data types (e.g., dates, numeric fields).
+Created new calculated columns like Year, Quarter, Month, Day, etc.
 
-Uncovered yearly sales growth trends from $2.3M in 2011 to $4.3M in 2014, demonstrating a consistent upward trajectory in business performance.
+2. Data Modelling
+   
+Built a star schema with a central Orders fact table.
+Applied relationships between dimensions like Region, Category, State, Segment, and Ship Mode.
+Ensured relationships were correctly defined (one-to-many, single-direction).
 
-Visualized sub-category-wise contributions, revealing Phones, Chairs, and Copiers as high-performing product lines, each generating $1.6M+ in sales.
+3. DAX Measures
+   
+Created custom DAX measures for:
+Total Sales, Total Profit, Total Quantity, Total Products
+Year-wise and Category-wise breakdowns
+Profit Margin by Segment and Market
+Dynamic filtering using slicers
 
- Tools & Techniques Used:
-Power BI for data modeling, visualization, and DAX measures.
+4. Dashboard Development
+a. Executive Summary Page
 
-Implemented slicers and drill-down features for dynamic user interaction.
+KPIs for Total Sales (₹12.64M), Profit (₹1.47M), Quantity, Products
+Donut charts for Sales and Profit by Category
+Line chart for yearly sales trend
+Bar charts for sub-category analysis
+Sales vs. Profit by Segment
 
-Customized visuals: bar charts, pie charts, line graphs, treemaps, and KPIs for executive summaries.
+b. Customer Summary Page
 
-Features:
-Executive Summary: High-level KPIs such as total sales, profit, quantity, and product count.
+Treemap for Sales by Region
+Line chart for Profit by Year
+Bar charts for Sales by State, Quantity by Segment
+Pie chart for Sales by Ship Mode
+Market-wise Profit Analysis
 
-Category & Segment Analysis: Deep dive into product categories, sub-categories, and customer segments.
+c. Raw Data Page
 
-Time Series Analysis: Year-wise performance of sales and profit.
+Tabular view of the original dataset for verification and transparency
+Used for audit and validation purposes
 
-Regional Breakdown: Filters for category, country, state, and order priority for granular insights.
+5. Interactivity & UX
 
+Slicers for Category, Sub-Category, Region, Country, State, Market, and Order Priority
+Drill-down capabilities in visuals
+Page-level filters to enable dynamic storytelling
+Applied theme colors and consistent layout for better visual hierarchy
+
+Outcomes:
+
+Delivered an end-to-end, interactive dashboard for business insights.
+Helped identify top-performing categories, customer segments, and regions.
+Enabled business stakeholders to make data-driven decisions quickly.
