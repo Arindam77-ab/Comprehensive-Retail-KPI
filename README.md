@@ -1,7 +1,7 @@
  Project Title: Comprehensive-Retail-KPI
 
 Tool Used: Power BI
-Data Source: Excel file containing transactional sales data (over 12K rows)
+Data Source: Excel file containing transactional sales data 
 
 Objective:
 To build an interactive and insightful Power BI dashboard for analyzing sales, profit, quantity, and product distribution across various dimensions such as Region, Category, Market, and Time for a global superstore.
