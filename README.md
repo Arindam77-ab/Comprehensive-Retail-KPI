@@ -1,4 +1,5 @@
- Project Title: Superstore Sales Performance Dashboard
+ Project Title: Comprehensive-Retail-KPI
+
 Tool Used: Power BI
 Data Source: Excel file containing transactional sales data (over 12K rows)
 
